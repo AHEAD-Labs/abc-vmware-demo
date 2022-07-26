@@ -4,7 +4,7 @@ resource "vsphere_virtual_machine" "vm" {
   datastore_id     = data.vsphere_datastore.datastore.id
   num_cpus         = 1
   memory           = 1024
-  guest_id         = "centos8_64Guest"
+  guest_id         = "centos7_64Guest"
   clone {
     template_uuid = data.vsphere_virtual_machine.template.id
   }
