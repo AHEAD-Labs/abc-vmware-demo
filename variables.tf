@@ -23,6 +23,10 @@ variable "vnetwork" {
   description = "vSphere Network"
 }
 
+variable "vtemplate" {
+  description = "vSphere OS Template"
+}
+
 variable "vcluster" {
   description = "vSphere cluster name"
 }

@@ -5,6 +5,9 @@ resource "vsphere_virtual_machine" "vm" {
   num_cpus         = 1
   memory           = 1024
   guest_id         = "centos8_64Guest"
+  clone {
+    template_uuid = data.vsphere_virtual_machine.template.id
+  }
   network_interface {
     network_id = data.vsphere_network.network.id
   }
