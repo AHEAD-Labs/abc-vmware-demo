@@ -22,3 +22,7 @@ variable "vdatastore" {
 variable "vnetwork" {
   description = "vSphere Network"
 }
+
+variable "vtemplate" {
+  description = "vSphere OS Template"
+}
